@@ -10,5 +10,7 @@ Tuple | x | ✓ | ✓ | ✓
 Set |✓ | x | x | x
 
 ## Lambda funtion
+Lambda funtion is a funtion in a single line of code
+
 ![Lambda funtion](https://runestone.academy/ns/books/published/fopp/_images/lambda.gif "Lambda funtion")
 
