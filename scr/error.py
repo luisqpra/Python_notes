@@ -14,3 +14,5 @@ try:
         raise Exception('Minors are not allowed')
 except Exception as error:
     print(error)
+
+print("End process")
