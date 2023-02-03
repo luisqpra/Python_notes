@@ -1,0 +1,2 @@
+# Generate .gitignore file 
+gitignore.io
