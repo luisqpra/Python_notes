@@ -4,5 +4,7 @@ gitignore.io
 python -m venv venv
 # Activate virtual environment
 source venv/bin/activate
+# Deactivate virtual environment
+deactivate
 # Install requirements
 pip install -r requirements.txt
