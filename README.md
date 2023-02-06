@@ -22,12 +22,18 @@ Lambda funtion is a funtion in a single line of code
 
  ### LowerCamelCase
 
+* Funtions
+* Methods
+
 ```python
 def checkStatusApi():
     pass 
 ```
 
 ### UpperCamelCase
+
+* Classes
+* Exceptions - add at the end **Error**
 
 ```python
 class MotionAPi():
@@ -36,6 +42,9 @@ class MotionAPi():
 
 ### Snake_case
 
+* Functions 
+* Variables
+
 ```python
 def compute_angle_vectors():
     pass 
@@ -43,6 +52,7 @@ def compute_angle_vectors():
 
 ### SCREAMING_SNAKE_CASE
 
+* Constants
 
 ```python
 class TwitterApi:
