@@ -1,5 +1,3 @@
-Claro, aquí tienes algunos ejemplos de cómo usar la biblioteca NumPy en Python para realizar operaciones de álgebra lineal básicas:
-
 1. **Importar NumPy**:
 
    Antes de utilizar NumPy, asegúrate de importarlo en tu script o entorno de Python:
@@ -80,4 +78,112 @@ Claro, aquí tienes algunos ejemplos de cómo usar la biblioteca NumPy en Python
    x = np.linalg.solve(A, b)
    ```
 
-Estos son solo algunos ejemplos básicos de cómo NumPy se utiliza en álgebra lineal en Python. NumPy proporciona muchas más funciones y capacidades para operaciones avanzadas de álgebra lineal.
+4. **Descomposiciones de matrices**:
+
+   a. **Descomposición LU**:
+
+   ```python
+   import numpy as np
+
+   A = np.array([[2, 3], [1, 4]])
+
+   # Descomposición LU
+   P, L, U = scipy.linalg.lu(A)
+   ```
+
+   b. **Descomposición QR**:
+
+   ```python
+   import numpy as np
+
+   A = np.array([[2, -1], [1, 2], [1, 2]])
+
+   # Descomposición QR
+   Q, R = np.linalg.qr(A)
+   ```
+
+5. **Valores y vectores propios**:
+
+   ```python
+   import numpy as np
+
+   A = np.array([[4, -2], [1, 1]])
+
+   # Calcular valores y vectores propios
+   eigenvalues, eigenvectors = np.linalg.eig(A)
+   ```
+
+6. **Factorización de matrices**:
+
+   a. **Factorización de valores singulares (SVD)**:
+
+   ```python
+   import numpy as np
+
+   A = np.array([[1, 2, 3], [4, 5, 6]])
+
+   # Factorización SVD
+   U, S, V = np.linalg.svd(A)
+   ```
+
+   b. **Factorización de Cholesky**:
+
+   ```python
+   import numpy as np
+
+   A = np.array([[4, 6, 8], [6, 13, 17], [8, 17, 30]])
+
+   # Factorización de Cholesky
+   L = np.linalg.cholesky(A)
+   ```
+
+7. **Funciones para matrices especiales**:
+
+   a. **Matriz de Hilbert**:
+
+   ```python
+   import numpy as np
+
+   n = 4
+
+   # Matriz de Hilbert
+   H = np.linalg.hilbert(n)
+   ```
+
+   b. **Matriz de Vandermonde**:
+
+   ```python
+   import numpy as np
+
+   x = np.array([1, 2, 3, 4])
+
+   # Matriz de Vandermonde
+   V = np.vander(x)
+   ```
+
+8. **Cálculos avanzados de matrices**:
+
+   a. **Normas matriciales**:
+
+   ```python
+   import numpy as np
+
+   A = np.array([[1, 2], [3, 4]])
+
+   # Norma Frobenius
+   norm_frobenius = np.linalg.norm(A, 'fro')
+
+   # Norma de Frobenius al cuadrado
+   norm_frobenius_squared = np.linalg.norm(A, 'fro')**2
+   ```
+
+   b. **Rango de una matriz**:
+
+   ```python
+   import numpy as np
+
+   A = np.array([[1, 2], [3, 4], [5, 6]])
+
+   # Calcular el rango de A
+   rank_A = np.linalg.matrix_rank(A)
+   ```
