@@ -44,7 +44,9 @@
    - **Explicación**: El método `describe()` genera estadísticas descriptivas para columnas numéricas en un DataFrame, como media, desviación estándar y cuartiles.
    - **Ejemplo**:
      ```python
-     estadisticas = df.describe()
+     estadisticas = df.describe() # -> Campos numericos (inlcude=[np.number])
+     estadisticas = df.describe(include=object) # -> Campos categoricos
+     estadisticas = df.describe(include=All) # -> Todos los campos
      ```
 
 8. **dtypes**:
